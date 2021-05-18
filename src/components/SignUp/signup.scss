@@ -1,0 +1,30 @@
+@import '../../styles/var/var.scss';
+
+.signup__wrapper {
+
+  p {
+    text-align: center;
+    color: $grey;
+    font-family: $primaryFont;
+    font-size: 0.875rem;
+    line-height: 1.2;
+
+    span {
+      display: block;
+    }
+  }
+}
+
+.signup__inner--wrapper {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 5rem auto 0;
+  flex-direction: column;
+  width: 20%;
+
+  @media(min-width: 1000px) {
+    height: 90vh;
+    margin-top: 0;
+  }
+}

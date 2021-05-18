@@ -1,0 +1,33 @@
+@import '../../styles/var/var.scss';
+
+.tabs__wrapper {
+  display: flex;
+  margin-bottom: 50px;
+  font-size: 20px;
+  color: #898989;
+  font-family: $primaryFont;
+  justify-content: space-between;
+  width: 100%;
+
+  @media(min-width: 1000px) {
+    font-size: 24px;
+  }
+
+  div {
+    padding: 10px 20px;
+    border-bottom: 1px solid #898989;
+    width: 50%;
+    font-size: 22px;
+    text-align: center;
+
+    &:hover {
+      cursor: pointer;
+    }
+
+    &.active {
+      color: #000;
+      font-weight: 600;
+      border-bottom: 2px solid #000;
+    }
+  }
+}

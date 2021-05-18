@@ -1,0 +1,29 @@
+@import '../../styles/var/var.scss';
+
+.primary__button {
+  margin: 50px auto 0 auto;
+
+  button {
+    font-family: $primaryFont;
+    padding: 10px;
+    background: $neonGreen;
+    border: none;
+    color: #FFF;
+    font-size: 18px;
+    width: 200px;
+    border-radius: 10px;
+    border: 1px solid $neonGreen;
+    transition: ease-out 0.4s;
+    
+    &:hover {
+      cursor: pointer;
+      background-color: #fff;
+      color: $neonGreen;
+      box-shadow: inset 400px 0 0 0 #fff;
+    }
+  
+    &:focus {
+      outline: none;
+    }
+  }
+}
